@@ -33,7 +33,7 @@ body {
 #banner img {
     width: 100%;
     height: auto;
-    background-position: center; 
+    background-position: center;
 }
 
 /* 内容 */
@@ -50,7 +50,7 @@ body {
     text-align: center;
     place-items: center;
     margin-top: 20px;
-    background-image: url('../images/robot.jpg');
+    background-image: url('../images/robot.avif');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -91,20 +91,20 @@ body {
 }
 
 /* 内容选项 */
-.journal {
+.note {
     display: inline-block;
     cursor: pointer;
     align-items: center;
 }
 
-.journal img {
+.note img {
     width: 200px;
     height: auto;
     transition: transform 0.2s ease, clip-path 0.5s ease;
     padding-top: 20px;
 }
 
-.journal:hover img {
+.note:hover img {
     transform: scale(1.1);
 }
 
@@ -147,10 +147,10 @@ body {
 }
 
 #copyright {
-   width: 100%;
-   font-size: 14px;
-   color: #ffffff; 
-   text-align: center; 
+    width: 100%;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
 }
 
 /* 成长 */
@@ -197,7 +197,7 @@ body {
     height: auto;
     background-color: #ededed;
     border-radius: 0px 0px 0px 0px;
-    background-image: url('../images/team.jpg');
+    background-image: url('../images/puzzle.avif');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -271,7 +271,7 @@ body {
     flex-direction: column;
 }
 
-#link p{
+#link p {
     font-size: 16px;
     color: #ffffff;
 }
