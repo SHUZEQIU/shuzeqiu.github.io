@@ -151,6 +151,12 @@ body {
     font-size: 14px;
     color: #ffffff;
     text-align: center;
+    margin-top: 20px;
+}
+
+#copyright img {
+    width: 10%;
+    height: auto;
 }
 
 /* 成长 */
