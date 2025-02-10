@@ -4,8 +4,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     background-color: #282828;
 }
 
@@ -34,7 +34,8 @@ body {
 #banner img {
     width: 100%;
     height: auto;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* 内容 */
@@ -42,7 +43,9 @@ body {
     width: 90%;
     height: auto;
     color: white;
-    background-color: rgba(255, 255, 255, 100%);
+    margin: 0px;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 1);
     border-radius: 20px 20px 20px 20px;
     border-left: 1.5px solid rgb(255, 255, 255);
     border-right: 1.5px solid rgb(255, 255, 255);
@@ -117,7 +120,7 @@ body {
     justify-content: center;
     padding-left: 40px;
     padding-right: 40px;
-    place-items: center;
+    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -163,8 +166,9 @@ body {
 #growing {
     width: 100%;
     height: auto;
+    margin: 0px;
     background-color: #ededed;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px;
     text-align: center;
 }
 
@@ -173,7 +177,7 @@ body {
     width: 100%;
     height: auto;
     background-color: #ffffff;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px;
     text-align: center;
 }
 
@@ -203,6 +207,10 @@ body {
     transform: scale(1.5);
 }
 
+.lego:last-child {
+    margin-bottom: 30px;
+}
+
 /* 内容选项 */
 .gameplay {
     display: inline-block;
@@ -213,7 +221,7 @@ body {
 .gameplay img {
     width: 300px;
     height: auto;
-    transition: transform 0.2s ease, clip-path 0.5s ease, filter 0.8s ease;
+    transition: transform 0.2s ease, filter 0.8s ease;
     padding-top: 20px;
     filter: grayscale(100%);
 }
@@ -227,8 +235,9 @@ body {
 #email {
     width: 100%;
     height: auto;
+    margin: 0px;
     background-color: #ededed;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px;
     background-image: url('../images/puzzle.avif');
     background-size: cover;
     background-position: center;
@@ -237,25 +246,17 @@ body {
     place-items: center;
 }
 
+#email img {
+    width: 20%;
+    height: auto;
+}
+
 #emailbox {
     width: 100%;
     height: auto;
+    margin: 0;
     text-align: center;
-    place-items: center;
     align-items: center;
-}
-
-#emailbox img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-}
-
-#emailbox2 {
-    width: 100%;
-    height: auto;
-    text-align: left;
-    white-space: pre-wrap;
 }
 
 #emailbox p {
@@ -287,6 +288,7 @@ body {
 #link {
     width: 100%;
     height: auto;
+margin: 0px;
     background-color: #147dff;
     border-radius: 0px 0px 20px 20px;
     text-align: center;
