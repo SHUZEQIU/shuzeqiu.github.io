@@ -71,6 +71,7 @@ body {
 
 #content h1 {
     background: linear-gradient(to right, #6e7da0, #8d9bbc);
+    background-clip: text;
     color: transparent;
     font-size: 26px;
     margin-top: 15px;
