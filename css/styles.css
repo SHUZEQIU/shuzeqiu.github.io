@@ -45,6 +45,13 @@ body {
     margin: 20px auto;
 }
 
+.linkhr {
+    border: none;
+    border-top: 1px solid white;
+    width: 50%;
+    margin: 20px auto;
+}
+
 /* 内容 */
 #content {
     width: 90%;
