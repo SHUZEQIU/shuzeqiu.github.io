@@ -38,6 +38,13 @@ body {
     object-position: center;
 }
 
+.hr {
+    border: none;
+    border-top: 1px solid gray;
+    width: 50%;
+    margin: 20px auto;
+}
+
 /* 内容 */
 #content {
     width: 90%;
