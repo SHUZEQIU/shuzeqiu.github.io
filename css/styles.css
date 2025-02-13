@@ -9,7 +9,7 @@ body {
     background-color: #282828;
 }
 
-/* 顶部 */
+/* top */
 #top {
     display: flex;
     width: 90%;
@@ -52,7 +52,7 @@ body {
     margin: 20px auto;
 }
 
-/* 内容 */
+/* content */
 #content {
     width: 90%;
     height: auto;
@@ -105,7 +105,7 @@ body {
     color: #626262;
 }
 
-/* 内容选项 */
+/* note */
 .note {
     display: inline-block;
     cursor: pointer;
@@ -174,7 +174,7 @@ body {
     height: auto;
 }
 
-/* 成长 */
+/* growing */
 #growing {
     width: 100%;
     height: auto;
@@ -223,7 +223,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* 内容选项 */
+/* gameplay */
 .gameplay {
     display: inline-block;
     cursor: pointer;
@@ -296,7 +296,7 @@ body {
     border-radius: 10px;
 }
 
-/* 常见问题 */
+/* link */
 #link {
     width: 100%;
     height: auto;
@@ -363,7 +363,6 @@ margin: 0px;
     outline: 1px solid #3e78fe;
 }
 
-/* 鼠标移开时恢复效果 */
 .teaching-button:active {
     transform: translateY(0);
 }
