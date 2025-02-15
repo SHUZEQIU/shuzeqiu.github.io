@@ -10,7 +10,7 @@ body {
 }
 
 /* top */
-#top {
+.top {
     display: flex;
     width: 90%;
     height: 100px;
@@ -26,18 +26,20 @@ body {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
-#banner {
+/* banner */
+.banner {
     width: 100%;
     height: auto;
 }
 
-#banner img {
+.banner img {
     width: 100%;
     height: auto;
     object-fit: cover;
     object-position: center;
 }
 
+/* divider */
 .hr {
     border: none;
     border-top: 1px solid gray;
@@ -53,7 +55,7 @@ body {
 }
 
 /* content */
-#content {
+.content {
     width: 90%;
     height: auto;
     color: white;
@@ -73,39 +75,55 @@ body {
     background-attachment: fixed;
 }
 
-#contentfontbox {
+.contentfontbox {
     width: 80%;
     height: auto;
     margin: 0 auto;
 }
 
-#content.bg-fade {
+.content.bg-fade {
     background-image: none;
 }
 
-#content h1 {
+.content h1 {
     color: #808080;
     font-size: 26px;
-    margin-top: 15px;
+    margin-top: 0px;
     text-align: center;
     padding-top: 20px;
 }
 
-#content h3 {
+.content h3 {
     color: #626262;
 }
 
-#content h2 {
+.content h2 {
     color: #ffffff;
     font-size: 26px;
     padding-top: 20px;
 }
 
-#content p {
+.content p {
     color: #626262;
 }
 
-/* note */
+/* video */
+.video {
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* growing */
+.growing {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    background-color: #ededed;
+    border-radius: 0px;
+    text-align: center;
+}
+
 .note {
     display: inline-block;
     cursor: pointer;
@@ -123,7 +141,8 @@ body {
     transform: scale(1.4);
 }
 
-#bottom {
+/* bottom */
+.bottom {
     color: #ffffff;
     font-size: 16px;
     text-align: center;
@@ -136,56 +155,33 @@ body {
     margin-bottom: 30px;
 }
 
-#bottom img {
+.bottom img {
     width: 60%;
     height: auto;
 }
 
-#bottomboxone {
+.bottomboxone {
     width: 15%;
     height: auto;
 }
 
-#bottomboxone p {
+.bottomboxone p {
     font-size: 12px;
     float: left;
 }
 
-#bottomboxtwo {
+.bottomboxtwo {
     width: 15%;
     height: auto;
     align-items: center;
 }
 
-#bottomboxtwo p {
+.bottomboxtwo p {
     font-size: 12px;
 }
 
-#copyright {
-    width: 100%;
-    font-size: 14px;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 20px;
-}
-
-#copyright img {
-    width: 10%;
-    height: auto;
-}
-
-/* growing */
-#growing {
-    width: 100%;
-    height: auto;
-    margin: 0px;
-    background-color: #ededed;
-    border-radius: 0px;
-    text-align: center;
-}
-
 /* game */
-#game {
+.game {
     width: 100%;
     height: auto;
     background-color: #ffffff;
@@ -193,44 +189,13 @@ body {
     text-align: center;
 }
 
-/* lego */
-#lego {
-    width: 100%;
-    height: auto;
-    background-color: #ededed;
-    border-radius: 0px 0px 0px 0px;
-    text-align: center;
-}
-
-.lego {
+.gametype {
     display: inline-block;
     cursor: pointer;
     align-items: center;
 }
 
-.lego img {
-    width: 300px;
-    height: auto;
-    transition: transform 0.2s ease, clip-path 0.5s ease;
-    padding-top: 20px;
-}
-
-.lego:hover img {
-    transform: scale(1.5);
-}
-
-.lego:last-child {
-    margin-bottom: 30px;
-}
-
-/* gameplay */
-.gameplay {
-    display: inline-block;
-    cursor: pointer;
-    align-items: center;
-}
-
-.gameplay img {
+.gametype img {
     width: 300px;
     height: auto;
     transition: transform 0.2s ease, filter 0.8s ease;
@@ -238,13 +203,43 @@ body {
     filter: grayscale(100%);
 }
 
-.gameplay:hover img {
+.gametype:hover img {
     transform: scale(1.2);
     filter: grayscale(0%);
 }
 
+/* lego */
+.lego {
+    width: 100%;
+    height: auto;
+    background-color: #ededed;
+    border-radius: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+.legomodels {
+    display: inline-block;
+    cursor: pointer;
+    align-items: center;
+}
+
+.legomodels img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.2s ease, clip-path 0.5s ease;
+    padding-top: 20px;
+}
+
+.legomodels:hover img {
+    transform: scale(1.5);
+}
+
+.legomodels:last-child {
+    margin-bottom: 30px;
+}
+
 /* email */
-#email {
+.email {
     width: 100%;
     height: auto;
     margin: 0px;
@@ -258,49 +253,42 @@ body {
     place-items: center;
 }
 
-#email img {
+.email img {
     width: 20%;
     height: auto;
 }
 
-#emailbox {
+.emailbox {
     width: 100%;
     height: auto;
-    margin: 0;
     text-align: center;
     align-items: center;
 }
 
-#emailbox p {
+.emailbox p {
     color: #363636;
     font-size: 16px;
 }
 
-.container {
-    perspective: 1000px;
-    /* Adds depth for 3D effect */
-}
-
-.threedimge {
+.avatar {
     width: 100%;
     height: auto;
     text-align: center;
     place-items: center;
     align-items: center;
-    transition: transform 0.2s ease-out;
+
 }
 
-.threedimge img {
-    width: 30%;
+.avatar img {
+    width: 20%;
     height: auto;
     border-radius: 10px;
 }
 
 /* link */
-#link {
+.link {
     width: 100%;
     height: auto;
-margin: 0px;
     background-color: #147dff;
     border-radius: 0px 0px 20px 20px;
     text-align: center;
@@ -308,7 +296,7 @@ margin: 0px;
     flex-direction: column;
 }
 
-#linkbox {
+.linkbox {
     width: 100%;
     height: auto;
     text-align: center;
@@ -317,28 +305,53 @@ margin: 0px;
     flex-direction: column;
 }
 
-#link p {
+.link h1 {
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.link p {
     font-size: 16px;
     color: #ffffff;
 }
 
-#link img {
+.link img {
     width: 50%;
     height: auto;
 }
 
-#teaching h3 {
+.container {
+    perspective: 1000px;
+    /* Adds depth for 3D effect */
+}
+
+/* copyright */
+.copyright {
+    width: 100%;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.copyright img {
+    width: 10%;
+    height: auto;
+}
+
+/* button */
+.button h3 {
     color: #363636;
     font-size: 26px;
     text-align: center;
     padding-top: 30px;
 }
 
-#teaching p {
+.button p {
     color: #363636;
 }
 
-.teaching-button {
+.button {
     width: 130px;
     height: 50px;
     outline: 1px solid #909090;
@@ -355,7 +368,7 @@ margin: 0px;
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.teaching-button:hover {
+.button:hover {
     color: #ffffff;
     background-color: #3e78fe;
     transform: translateY(-5px);
@@ -363,12 +376,6 @@ margin: 0px;
     outline: 1px solid #3e78fe;
 }
 
-.teaching-button:active {
+.button:active {
     transform: translateY(0);
-}
-
-.teachingvideo {
-    width: 70%;
-    height: auto;
-    border-radius: 20px;
 }
