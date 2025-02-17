@@ -245,7 +245,7 @@ body {
     margin: 0px;
     background-color: #ededed;
     border-radius: 0px;
-    background-image: url('../images/puzzle.avif');
+    background-image: url('../images/puzzle.svg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
